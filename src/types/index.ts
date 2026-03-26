@@ -7,6 +7,13 @@ export interface Product {
   description: string
 }
 
+export interface Review {
+  name: string
+  city: string
+  text: string
+  rating: number
+}
+
 export interface Section {
   id: string
   title: string
@@ -14,7 +21,9 @@ export interface Section {
   content?: string
   showButton?: boolean
   buttonText?: string
+  vkContact?: string
   products?: Product[]
+  reviews?: Review[]
 }
 
 export interface SectionProps extends Section {
